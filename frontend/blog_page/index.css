@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.home{
+
+    height: 99%;
+    width: 900px;
+    border: 1px solid #0A6847;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+}

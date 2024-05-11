@@ -1,0 +1,80 @@
+.login_div{
+    
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 20px;
+
+    
+    
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input{
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+
+
+
+.sign_up_btn{
+    
+    border: 1px solid #135D66;
+    width: 200px;
+    height: 50px;
+    background-color: #135D66;
+    font-size: 20px;
+    color:white
+    
+}
+.sign_up_btn:hover{
+    border: 1px solid #77B0AA;
+    width: 200px;
+    height: 50px;
+    background-color: #E3FEF7;
+    font-size: 20px;
+    color: black;
+}
+.buttons_div{
+    width: 70%;
+    flex-direction: row;
+    
+    justify-content: space-around;
+    display: flex;
+}
+
+
+.btn_go{
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 50px;
+    background-color: #D20062;
+    border: 0px;
+    font-size: 20px;
+    color: white;
+}
+.btn_go:hover{
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 50px;
+    background-color: #D6589F;
+    border: 0px;
+    font-size: 20px;
+    color: white;
+}

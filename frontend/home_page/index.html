@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="upside.css">
+    <link rel="stylesheet" href="downside.css">
+    
+</head>
+<body>
+    
+    
+    <div id="home" class="home">
+        <div id="upside" class="upside">
+            <div id="search_div" class="search_div">
+                <input type="text" class="search_input" id="search_input" placeholder="search a blog by title">
+                <button id="search_btn" class="search_btn">SEARCH</button>
+                
+            </div>
+            
+            
+            <div class="stack" id="notification">
+                <img src="notification_icon.png" alt="notification_icon" class="notification_icon">
+                <div class="notification_count" id="notification_count">
+                    1
+                </div>
+
+            </div>
+            <img src="settings_icon.png" alt="settings_icon" id="settings_icon" class="settings_icon">
+            <img src="temp.png" alt="profile picture" id="pp" class="pp">
+            <div class="return" id="log_out">
+                
+                <img src="log_out.png" alt="Description of the image">
+                
+            </div>
+        </div>
+        <div id="blogs" class="blogs">
+            
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+    <script src="check_notif.js"></script>
+    <script src="get_pp_image.js"></script>
+    <script src="go_to_settings.js"></script>
+    <script src="go_to_notification.js"></script>
+    <script src="check_session.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+create table users(id int auto_increment, name varchar(20), surname varchar(20),
+username varchar(20) unique, email varchar(50) unique,
+password varchar(60),
+primary key(id));
+
+
+create table blogs(id int auto_increment, title varchar(50), content text, user_id int,
+publish_date datetime, image_name varchar(50),
+primary key(id),
+foreign key(user_id) references users(id)
+);
+
+create table likes(blog_id int, user_id int, 
+foreign key(blog_id) references blogs(id),
+ foreign key(user_id) references users(id));
+
+
+create table notification(like_source int, like_dest int, blog_id int, act_time datetime default(now()),
+foreign key (like_source) references users(id),
+foreign key (like_dest) references users(id),
+foreign key (blog_id) references blogs(id)
+);
+
+create table pp(user_id int, picture_name varchar(100),
+foreign key (user_id) references users(id)
+);
+(select * from users inner join notification on users.id=notification.like_dest) as res,
+inner join blogs on res.blog_id=blogs.id;
+
+select username, title
+from (select * from users 
+      inner join notification on users.id = notification.like_source) as res
+inner join blogs on res.blog_id = blogs.id where res.like_dest=5 order by act_time desc;
