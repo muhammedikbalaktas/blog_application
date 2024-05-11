@@ -7,7 +7,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
-var dbInfo = "root:Skewed0214.@tcp(localhost:3306)/blog"
+var dbInfo = "root:<YOUR_PASSWORD>@tcp(localhost:3306)/blog"
 
 func createDb() (*sql.DB, error) {
 
